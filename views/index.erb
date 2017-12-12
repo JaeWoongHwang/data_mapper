@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Real_blog</title>
+  </head>
+    <body>
+    <h1>Welcome to Real blog</h1>
+      <% @posts.each do |post| %>
+        Title : <%= post.title %><br>
+      Content : <%= post.body %><br>
+      <% end %>
+
+    <form action = "/create">
+      TITLE :<input type="text" name = "title">
+      CONTENT : <input type="text" name = "content">
+      <input type="submit">
+    </form>
+    </body>
+</html>
