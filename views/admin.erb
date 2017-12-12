@@ -1,0 +1,8 @@
+  <h2>Admin Page</he><br>
+  <% @users.each do |user|%>
+  <!-- user라는 곳엔 email, password, id, created_at을 다 가지고 있고 가져오기 -->
+  <%= user.id %><br>
+  <%= user.email %><br>
+  <!-- <%= user.password %><br> -->
+  <%= user.created_at %><br>
+  <% end %>
